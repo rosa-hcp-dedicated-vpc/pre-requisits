@@ -22,15 +22,23 @@ DATE=$(shell date)
 TF_LOG=INFO
 #TF_LOG_PROVIDER_shell=TRACE
 
-#Paul np-app-1
-WORKSPACE=prerequisits-nonprod-dev
+#Paul np-spoke-1
+#WORKSPACE=prerequisits-nonprod-np-app-1
+#VARS=clusters/np-spoke-1.json
+
 #np-hub 
-WORKSPACE=prerequisits-nonprod-np-hub
-WORKSPACE=prerequisits-nonprod-np-app-1
+# WORKSPACE=prerequisits-nonprod-dev
+# VARS=clusters/np-hub.json
+
+#np-ai-1
+WORKSPACE=prerequisits-nonprod-ai-1
+VARS=clusters/np-ai-1.json
+
+
 # TF_BACKEND_BUCKET=terraform-state-foster-ocm-nonprod
 # TF_BACKEND_DYNAMO=terraform-lock
 # TF_BACKEND_KEY=cluster1-nonprod
-VARS=clusters/np-app-1.json
+
 # TF_BACKEND_KEY=cluster2-nonprod
 # VARS=clusters/cluster2-nonprod-public.tfvars.json
 # TF_BACKEND_KEY=cluster3-nonprod
